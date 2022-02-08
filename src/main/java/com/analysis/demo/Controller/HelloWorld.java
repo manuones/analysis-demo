@@ -50,5 +50,31 @@ public class HelloWorld {
         return "try深度demo";
     }
 
+    public String tryDemo2(){
+        try{
+            System.out.println("第一层");
+
+            try{
+                System.out.println("第二层");
+
+                try{
+                    System.out.println("第三层");
+
+                }catch(Exception e){
+
+                }
+
+            }catch(Exception e){
+
+            }
+
+        }catch(Exception e){
+
+        }
+
+        return "try深度demo";
+    }
+
+
     
 }
