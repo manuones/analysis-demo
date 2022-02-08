@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloWorld {
     @RequestMapping("/hello")
     public String hello() {
+        forDemo();
+        tryDemo();
         return "Hello World";
     }
 
@@ -29,6 +31,13 @@ public class HelloWorld {
 
             try{
                 System.out.println("第二层");
+
+                try{
+                    System.out.println("第三层");
+
+                }catch(Exception e){
+
+                }
 
             }catch(Exception e){
 
